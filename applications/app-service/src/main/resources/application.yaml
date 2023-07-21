@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: "usuariosms"
+  devtools:
+    add-properties: false
+  h2:
+    console:
+      enabled: true
+      path: "/h2"
+  profiles:
+    include: null
+  datasource:
+    url: "jdbc:postgresql://host:puerto/postgres?currentSchema=db"
+    username: "user"
+    password: "password"
+    driverClassName: "org.postgresql.Driver"
+  jpa:
+    databasePlatform: "org.hibernate.dialect.PostgreSQLDialect"
